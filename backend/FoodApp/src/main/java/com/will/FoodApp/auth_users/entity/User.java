@@ -7,7 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.management.relation.Role;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -40,7 +39,7 @@ public class User {
     private boolean isActive;
 
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -57,7 +56,7 @@ public class User {
     @OneToMany(mappedBy =  "user", cascade = CascadeType.ALL)
     private List<Payment> payments;
 
-    @OneToMany(mappedBy =  "user", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy =  "user", cascade = CascadeType.ALL)
     private Cart cart;
 
     private LocalDateTime createdAt;
