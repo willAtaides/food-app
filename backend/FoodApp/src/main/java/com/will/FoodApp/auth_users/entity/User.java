@@ -1,6 +1,10 @@
 package com.will.FoodApp.auth_users.entity;
 
 import com.will.FoodApp.cart.entity.Cart;
+import com.will.FoodApp.order.entity.Order;
+import com.will.FoodApp.payment.entity.Payment;
+import com.will.FoodApp.review.entity.Review;
+import com.will.FoodApp.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

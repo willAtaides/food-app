@@ -1,6 +1,8 @@
 package com.will.FoodApp.menu.entity;
 
 import com.will.FoodApp.category.entity.Category;
+import com.will.FoodApp.order.entity.OrderItem;
+import com.will.FoodApp.review.entity.Review;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,6 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Data

@@ -3,6 +3,7 @@ package com.will.FoodApp.order.entity;
 import com.will.FoodApp.auth_users.entity.User;
 import com.will.FoodApp.enums.OrderStatus;
 import com.will.FoodApp.enums.PaymentStatus;
+import com.will.FoodApp.payment.entity.Payment;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Data

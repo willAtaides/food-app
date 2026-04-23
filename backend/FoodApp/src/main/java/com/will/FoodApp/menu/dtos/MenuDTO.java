@@ -12,6 +12,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -36,7 +37,7 @@ public class MenuDTO {
     @NotNull(message = "Category ID is required")
     private Long categoryId; // needed when adding a menu
 
-    private MultpartFile imageFile; //For uploading the image
+    private MultipartFile imageFile; //For uploading the image
 
     private List<ReviewDTO> reviews;
 }
